@@ -159,7 +159,8 @@ NXP_CHIP_TYPE := 2
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/angler-setup.sh
 
-USE_CLANG_PLATFORM_BUILD := true
+# Use Snapdragon LLVM for Nightlies, if available
+TARGET_USE_SDCLANG := true
 
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
